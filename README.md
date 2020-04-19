@@ -14,4 +14,4 @@ If you are using a windows system:
   
 If you are using a ubuntu system, the 2nd step above is enough.
 
-![image](https://github.com/Aishwariyavalli/Python_Django_Resume_Builder/blob/master/homePage.jpg)
+![image](https://github.com/Aishwariyavalli/Python_Django_Resume_Builder/blob/master/homePage.JPG)
