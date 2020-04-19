@@ -8,7 +8,7 @@
 
 3.	SQLite (Database)
 # In order to run the project
-IIf you are using a windows system:
+If you are using a windows system:
 
 1. create a virtual environment using the following command: python -m venv myvenv in cmd and start the environment using myvenv\Scripts\activate. Install the required packages(django~=2.2.4, django-crispy-forms).
 
