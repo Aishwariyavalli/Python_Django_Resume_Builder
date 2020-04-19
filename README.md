@@ -11,4 +11,7 @@
 If you are using a windows system:
   1.	create a virtual environment using the following command: python -m venv myvenv in cmd and start the environment using myvenv\Scripts\activate. 
   2.	Move into myportfolio folder in cmd line and run the project using python manage.py runserver. 
+  
 If you are using a ubuntu system, the 2nd step above is enough.
+
+![image](https://github.com/Aishwariyavalli/Python_Django_Resume_Builder/blob/master/homePage.jpg)
