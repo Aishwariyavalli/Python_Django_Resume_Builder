@@ -1,0 +1,28 @@
+{% extends "base8.html" %}
+
+{% block title %}
+View
+{% endblock %}
+
+{% block content %}
+   <br/><br/>
+   <center>
+    {% for work in workexper%}
+   <div class="col-md-4">
+        <div class="card mb-2">
+            
+            <div class="card-body">
+                <h5 class="card-title">Company name: {{work.company}}</h5>
+                <p class="card-text">role: {{work.role}}</p>
+                <p class="card-text">years: {{work.years}}</p>
+				<p class="card-text">start year:{{work.start_year}}</p>
+				<p class="card-text">end year: {{work.end_year}}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+	<br/>
+	   <a href="{% url 'logSuccess'%}" class="btn btn-success">Go back to home page</a>
+	</center>
+	
+{% endblock %}

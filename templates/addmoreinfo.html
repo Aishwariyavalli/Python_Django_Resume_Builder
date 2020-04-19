@@ -1,0 +1,13 @@
+{% extends 'base5.html' %}
+
+{% block content %}
+<br/>
+<center>
+    <h2>Add more details about yourself</h2>
+    <form method="POST" >{% csrf_token %}
+        <table>{{ form.as_table }}</table><br/>
+       <button type="submit" class="btn btn-success">save</button>&nbsp;&nbsp
+	   <a href="{% url 'logSuccess'%}" class="btn btn-success">Cancel</a>
+    </form>
+	</center>
+{% endblock %}

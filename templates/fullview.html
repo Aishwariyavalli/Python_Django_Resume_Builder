@@ -1,0 +1,62 @@
+{% extends "base9.html" %}
+
+{% block title %}
+View
+{% endblock %}
+
+{% block content %}
+   <br/><br/>
+   <center>
+    <h1>Personal details:</h1>
+    {% for morein in moreinfo%}
+   <div class="col-md-4">
+        <div class="card mb-2">
+            
+            <div class="card-body">
+                <h5 class="card-title">Name: {{ morein.firstname }} {{morein.lastname}}</h5>
+                <p class="card-text">College name: {{morein.collegename}}</p>
+				<p class="card-text">From-to: {{morein.college_start_year}} to {{morein.college_end_year}}</p>
+                <p class="card-text">College cgpa: {{morein.collegecgpa}}</p>
+				<p class="card-text">High school name: {{morein.Highschoolname}}</p>
+				<p class="card-text">From-to: {{morein.high_school_start_year}} to {{morein.high_school_end_year}}</p>
+				<p class="card-text">High school cgpa: {{morein.Highschoolcgpa}}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+	<br/>
+	<h1> Work Experience: </h1>
+	{% for work in workexper%}
+   <div class="col-md-4">
+        <div class="card mb-2">
+            
+            <div class="card-body">
+                <h5 class="card-title">Company name: {{work.company}}</h5>
+                <p class="card-text">role: {{work.role}}</p>
+                <p class="card-text">years: {{work.years}}</p>
+				<p class="card-text">start year:{{work.start_year}}</p>
+				<p class="card-text">end year: {{work.end_year}}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+	<br/>
+	<h1> Projects done: </h1>
+	{% for project in projects %}
+   <div class="col-md-4">
+        <div class="card mb-2">
+            
+            <div class="card-body">
+                <h5 class="card-title">{{ project.title }}</h5>
+                <p class="card-text">{{ project.short_desc }}</p>
+                <a href="{% url 'project_detail' project.pk %}"
+                   class="btn btn-primary">
+                    Read More
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+	   <a href="{% url 'logSuccess'%}" class="btn btn-success">Go back to home page</a>
+	</center>
+{% endblock %}

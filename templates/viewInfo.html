@@ -1,0 +1,29 @@
+{% extends "base6.html" %}
+
+{% block title %}
+View
+{% endblock %}
+
+{% block content %}
+   <br/><br/>
+   <center>
+    {% for morein in moreinfo%}
+   <div class="col-md-4">
+        <div class="card mb-2">
+            
+            <div class="card-body">
+                <h5 class="card-title">Name: {{ morein.firstname }} {{morein.lastname}}</h5>
+                <p class="card-text">College name: {{morein.collegename}}</p>
+				<p class="card-text">From-to: {{morein.college_start_year}} to {{morein.college_end_year}}</p>
+                <p class="card-text">College cgpa: {{morein.collegecgpa}}</p>
+				<p class="card-text">High school name: {{morein.Highschoolname}}</p>
+				<p class="card-text">From-to: {{morein.high_school_start_year}} to {{morein.high_school_end_year}}</p>
+				<p class="card-text">High school cgpa: {{morein.Highschoolcgpa}}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+	<br/>
+	   <a href="{% url 'logSuccess'%}" class="btn btn-success">Go back to home page</a>
+	</center>
+{% endblock %}

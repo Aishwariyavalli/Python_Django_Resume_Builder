@@ -1,0 +1,16 @@
+{%extends 'baseF.html'%}
+
+{% block content %}
+<div class="text-center">
+  <h1> WELCOME!!</h1>
+  <a href="{% url 'create'%}" class="btn btn-primary">Add projects</a>&nbsp;&nbsp
+  <a href="{% url 'view'%}" class="btn btn-primary">View projects</a><br/><br/>
+  <a href="{% url 'addmoreinfo'%}" class="btn btn-primary">Add more info</a>&nbsp;&nbsp
+  <a href="{% url 'viewmoreinfo'%}" class="btn btn-primary">View  more info</a><br/><br/>
+  <a href="{% url 'addworkexper'%}" class="btn btn-primary">Add work experience</a>&nbsp;&nbsp
+  <a href="{% url 'viewworkexper'%}"class="btn btn-primary"> View work experience</a><br/><br/>
+  <a href="{% url 'fullview'%}"class="btn btn-primary"> View full resume</a><br/><br/>
+  <a href="{% url 'logout'%}" class="btn btn-primary">LOG OUT</a><br/>
+  </div>
+
+ {% endblock %}
