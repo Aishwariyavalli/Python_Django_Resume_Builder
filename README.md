@@ -13,6 +13,6 @@ If you are using a windows system:
   2. Copy the css and images folders into \Python_Django_Resume_Builder-master\myvenv\Lib\site-packages\django\contrib\admin\static
   3.	Move into second \Python_Django_Resume_Builder-master  folder in cmd line and run the project using python manage.py runserver. 
   
-If you are using a ubuntu system, the 2nd step above is enough.
+If you are using a ubuntu system, the 3rd step above is enough.
 
 ![image](https://github.com/Aishwariyavalli/Python_Django_Resume_Builder/blob/master/homePage.JPG)
