@@ -10,6 +10,7 @@
 # In order to run the project
 If you are using a windows system:
   1.	create a virtual environment inside the  \Python_Django_Resume_Builder-master using the following command: python -m venv myvenv in cmd and start the environment using myvenv\Scripts\activate. 
+  
   2.Install the required packages (django~=2.2.4 and django-crispy-forms)
   3. Copy the css and images folders into \Python_Django_Resume_Builder-master\myvenv\Lib\site-packages\django\contrib\admin\static
   4.	Move into second \Python_Django_Resume_Builder-master  folder in cmd line and run the project using python manage.py runserver. 
