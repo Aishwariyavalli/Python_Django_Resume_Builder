@@ -2,12 +2,10 @@
 # Block Diagram
 ![image](https://github.com/Aishwariyavalli/Python_Django_Resume_Builder/blob/master/Python_django_project_blockdiag.jpg)
 # Technology Stack
-1.	Python3 packages:
+1.	Python3 packages:Django, django-crispy-forms
 
-  i.	Django
-  
-  ii.	django-crispy-forms
 2.	HTML & CSS (front end)
+
 3.	SQLite (Database)
 # In order to run the project
 If you are using a windows system:
